@@ -1,0 +1,21 @@
+--- .vim/configs/vim-master	2012-10-09 22:51:43.200669000 -0400
++++ .vim/configs/vim-php	2012-10-10 00:16:14.724669002 -0400
+@@ -6,16 +6,13 @@
+ set visualbell
+ set ruler
+ set number
+-set shiftwidth=2
+-set expandtab
+-set tabstop=2
++set shiftwidth=4
++set tabstop=4
+ set bg=dark
+ set hlsearch
+ set incsearch
+ set ignorecase
+ set backspace=indent,eol,start
+-set autoindent
+-set spell
+ 
+ set completeopt=menu,menuone
+ 
