@@ -60,9 +60,9 @@ fi
 curl https://raw.github.com/n8han/conscript/master/setup.sh | sh
 
 cs philcali/lmxml
-cs philcali/monido
-cs philcali/cronish
-cs philcali/spdf
-cs philcali/rvc
-cs softprops/unplanned
-cs harrah/xsbt --branch 0.12.1
+#cs philcali/monido
+#cs philcali/cronish
+#cs philcali/spdf
+#cs philcali/rvc
+#cs softprops/unplanned
+#cs harrah/xsbt --branch 0.12.1
