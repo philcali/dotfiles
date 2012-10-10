@@ -1,0 +1,6 @@
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
+[submodule "vim-commander"]
+	path = vim-commander
+	url = git://github.com/philcali/vim-commander.git
