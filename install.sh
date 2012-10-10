@@ -36,7 +36,7 @@ then
   cp -v $VIMRC_CURRENT $VIMRC_BACKUP
 fi
 
-ln -s $VIM_CURRENT/configs/vim-general $VIM_CURRENT
+cp -v vim/configs/vim-master $VIM_CURRENT
 
 if [ -z `which git` ]
 then
