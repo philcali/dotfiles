@@ -1,0 +1,50 @@
+# detach on hangup
+autodetach on
+
+# don't display the copyright page
+startup_message off 
+
+# emulate .logout message
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+# advertise hardstatus support to $TERMCAP
+# termcapinfo  * '' 'hs:ts=\E_:fs=\E\\:ds=\E_\E\\'
+
+# make the shell in every window a login shell
+#shell -$SHELL
+
+# autoaka testing
+# shellaka '> |tcsh'
+# shellaka '$ |sh'
+
+# set every new windows hardstatus line to somenthing descriptive
+# defhstatus "screen: ^En (^Et)"
+
+defscrollback 5000
+
+#remove some stupid / dangerous key bindings
+bind k
+bind ^k
+bind .
+bind ^\
+bind \\
+bind ^h
+bind h
+#make them better
+bind 'K' kill
+#bind 'I' login on
+#bind 'O' login off 
+bindkey -k F1 prev
+bindkey -k F2 next
+
+# Local Mods
+
+screen -t coding -T linux 0
+screen -t coding2 -T linux 1
+screen -t db -T linux 2
+#screen -t somebox -T linux 5 ssh user@somebox.lsu.edu
+
+multiuser on
+caption always "%{= kG}%H [%Y%m%d %c]: %-Lw%{= bW}%50>%n%f* %t%{-}%+Lw%<"
+
+defutf8 on
