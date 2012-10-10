@@ -1,0 +1,28 @@
+call pathogen#infect()
+
+syntax on
+filetype plugin indent on
+
+set visualbell
+set ruler
+set number
+set shiftwidth=2
+set expandtab
+set tabstop=2
+set bg=dark
+set hlsearch
+set incsearch
+set ignorecase
+set backspace=indent,eol,start
+set autoindent
+set spell
+
+set completeopt=menu,menuone
+
+set textwidth=80
+
+set list
+set listchars=tab:>-,trail:-
+
+map <S-N> :NERDTreeToggle<CR>
+map <S-F> :CommandT<CR>

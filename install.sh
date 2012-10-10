@@ -43,7 +43,7 @@ then
   echo "The rest of my configuration requires git... sorry :("
 fi
 
-git submodules update --init
+git submodule update --init
 
 cd vim-commander
 sh install.sh
