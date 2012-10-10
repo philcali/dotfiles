@@ -17,6 +17,10 @@ fi
 
 ln -s $PWD/vim $VIM_CURRENT
 
+cd vim/bundle/command-t
+make
+cd ../../../
+
 if [ -e $SCREENRC_CURRENT]
 then
   echo "Backing up your $SCREENRC_CURRENT to $SCREENRC_BACKUP"
@@ -59,5 +63,6 @@ cs philcali/lmxml
 cs philcali/monido
 cs philcali/cronish
 cs philcali/spdf
+cs philcali/rvc
 cs softprops/unplanned
 cs harrah/xsbt --branch 0.12.1
