@@ -42,7 +42,7 @@ bindkey -k F2 next
 screen -t coding -T linux 0
 screen -t coding2 -T linux 1
 screen -t db -T linux 2
-#screen -t somebox -T linux 5 ssh user@somebox.lsu.edu
+#screen -t somebox -T linux 5 ssh user@somebox.domain
 
 multiuser on
 caption always "%{= kG}%H [%Y%m%d %c]: %-Lw%{= bW}%50>%n%f* %t%{-}%+Lw%<"
