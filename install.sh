@@ -24,7 +24,7 @@ then
   tar -xvf $VIM_VERSION.tar.bz2
   rm $VIM_VERSION.tar.bz2
   cd $VIM_DIR
-  ./configure --enable-rubyinterp --with-features=huge
+  ./configure --prefix=/usr --enable-rubyinterp --with-features=huge
   make
   sudo make install
   cd ../
