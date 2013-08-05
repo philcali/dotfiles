@@ -1,1 +1,0 @@
-/home/philip/dev/shell/dotfiles/vim-pathogen/autoload/pathogen.vim
