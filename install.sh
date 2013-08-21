@@ -85,6 +85,11 @@ then
   exit
 fi
 
+ln -s $PWD/scala/tool-support/src/vim/ftdetect $VIM_CURRENT/ftdetect
+ln -s $PWD/scala/tool-support/src/vim/plugin $VIM_CURRENT/plugin
+ln -s $PWD/scala/tool-support/src/vim/syntax $VIM_CURRENT/syntax
+ln -s $PWD/scala/tool-support/src/vim/indent $VIM_CURRENT/indent
+
 curl https://raw.github.com/n8han/conscript/master/setup.sh | sh
 
 cs philcali/lmxml
