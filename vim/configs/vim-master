@@ -15,14 +15,14 @@ set incsearch
 set ignorecase
 set backspace=indent,eol,start
 set autoindent
-set spell
 
 set completeopt=menu,menuone
 
-set textwidth=80
-
 set list
 set listchars=tab:>-,trail:-
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.jar,*.class,*/target/*
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 map <S-N> :NERDTreeToggle<CR>
-map <S-F> :CommandT<CR>
+map <S-F> :CtrlP<CR>
+map <S-T> :TagbarToggle<CR>
